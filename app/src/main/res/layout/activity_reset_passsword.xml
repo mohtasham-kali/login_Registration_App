@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.loginregistrationapp.ResetPasssword">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:text="Rest Password"
+        android:textSize="30dp"
+        android:textColor="@color/design_default_color_primary_dark"
+
+        />
+
+    <EditText
+        android:id="@+id/et_email_forgotPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:layout_below="@+id/textView"
+        android:hint="Enter Email here"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/et_name_forgotPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:layout_below="@+id/et_email_forgotPass"
+        android:hint="Enter Name here"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/btn_chk_info"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/et_name_forgotPass"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="Proceed"/>
+    <EditText
+        android:id="@+id/et_reset_Pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:layout_below="@+id/btn_chk_info"
+        android:hint="Enter new password"
+        android:inputType="textPassword" />
+    <Button
+        android:id="@+id/btn_resetpassword"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/et_reset_Pass"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="Reset password"/>
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.loginregistrationapp.FeeCollectionActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Name:" />
+
+        <TextView
+            android:id="@+id/Student_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toRightOf="@id/label" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fees_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_layout"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/fees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fees:" />
+
+        <EditText
+            android:id="@+id/fees_edit_text"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/fees"
+            android:layout_marginStart="16dp"
+            android:layout_toRightOf="@id/fees"
+            android:inputType="number" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/duefees_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fees_layout"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/duefees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Due Amount:" />
+
+        <EditText
+            android:id="@+id/duefees_edit_text"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/duefees"
+            android:layout_marginStart="16dp"
+            android:layout_toRightOf="@id/duefees"
+            android:inputType="number" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@id/duefees_layout"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.loginregistrationapp.Login">
+
+    <TextView
+        android:id="@+id/textview_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        />
+
+    <EditText
+        android:id="@+id/et_email_login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textview_login"
+        android:layout_marginTop="20sp"
+        android:hint="Your Email Address"
+        android:textCursorDrawable="@null"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:id="@+id/et_pass_login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/et_email_login"
+        android:layout_marginTop="10sp"
+        android:hint="Your Email password"
+        android:textCursorDrawable="@null"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_pass_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:background="@color/design_default_color_primary_dark"
+        android:padding="20sp"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_forgetPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Forgot Password?"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="15dp" />
+    <TextView
+        android:id="@+id/tv_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_forgetPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Not Registered? Sign up"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="15dp" />
+
+
+</RelativeLayout>
